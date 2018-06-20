@@ -14,7 +14,8 @@
 ##### TFIDF
 如何自己写以及如何用tfidfvectorizor都比较熟了
 
-##### 基于矩阵分解的LFM - latent factor model
+##### 基于矩阵分解的LFM - latent factor model 
+LFM和NFM其实一样的啦 只不过LFM聚焦于推荐系统
 参考：https://yq.aliyun.com/articles/152083
 * 常用于推荐系统
 * 原理就是用中间的主题latent factor将user-item矩阵分解，即将user, item通过topic联系起来，变为P矩阵：user * topic 和Q矩阵：topic * item，通过梯度下降法不断用P * Q去逼近原本的user-item矩阵 数学上大概是 矩阵的uv分解，将很大的一个稀疏矩阵用两个低维的矩阵去估计逼近～
